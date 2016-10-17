@@ -116,4 +116,6 @@
   <preference name="android-maxSdkVersion" value="23" />
   <preference name="android-targetSdkVersion" value="21" />
   <preference name="phonegap-version" value="cli-6.1.0" />
+  <preference name="windows-appx-target" value="uap" />
+  <preference name="windows-arch" value="anycpu" />
 </widget>
