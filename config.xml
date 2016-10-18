@@ -111,6 +111,7 @@
   <plugin name="cordova-plugin-compat"  />
   <plugin name="cordova-plugin-file"  />
   <plugin name="cordova-plugin-barcodescanner" />
+  <plugin name="cordova-plugin-geolocation" />
   <preference name="AndroidPersistentFileLocation" value="Compatibility"/> 
   <preference name="android-minSdkVersion" value="1" />
   <preference name="android-maxSdkVersion" value="23" />

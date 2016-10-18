@@ -15,7 +15,11 @@
 			});
 		}
 		  
-		  
+		document.getElementById("geolocation").onclick = function() {
+			navigator.geolocation.getCurrentPosition(geolocationSuccess,
+                                         onSuccess,
+                                         onError);
+		}
 	
 	};
 	function onPhotoDataSuccess(imageData) {
@@ -26,12 +30,21 @@
 
 		smallImage.src = "data:image/jpeg;base64," + imageData;
 
-	}
+	};
 
 	function onFail(message) {
 
 		alert('Failed because: ' + message);
 
-	}
+	};
 
+	function geolocationSuccess(position) {
+		alert('Latitude: '+ position.coords.latitude+ '\n' +
+              'Longitude: '+ position.coords.longitude);
+	};
+	
+	function geolocationError(error) {
+		alert('code: '    + error.code    + '\n' +
+              'message: ' + error.message + '\n');
+	};
 })();
